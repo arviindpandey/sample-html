@@ -4,11 +4,21 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <title>About me</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         body {
             margin: 0px;
+            font-family: Roboto;
+        }
+
+        .spaced-container {
+            margin: 60px;
+            padding: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         .profile-image {
@@ -28,10 +38,37 @@
         .designation {
             font-style: italic;
         }
-        .about-section{
+
+        .about-section {
             margin: 60px;
             background-color: aquamarine;
             padding: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .about-content {
+            font-style: italic;
+            line-height: 25px;
+        }
+
+        .photo {
+            height: 300px;
+            width: auto;
+        }
+
+        .top-divider {
+
+            border-top: 5px solid #81559B;
+        }
+
+        .movie-list-items {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .movie-list {
+            text-align: center;
         }
     </style>
 </head>
@@ -43,18 +80,58 @@
         <h3 class="designation">Python Developer at CandorWorks</h3>
     </div>
 
-    <div class="about-section">
+    <div class="about-section spaced-container ">
         <h3>About me</h3>
 
-            <p>I am self-taugh software developer. I work as python developer in Candorowrks. I have different hobbies
-                like cooking and doing Yoga.
+        <p class="about-content">I am self-taugh software developer. I work as python developer in Candorowrks. I have
+            different hobbies
+            like cooking and doing Yoga.
 
-            </p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde commodi exercitationem dolor esse illum aut odit, nam facere deserunt quo? Quam sed asperiores doloremque nam tempore totam excepturi placeat minus.
+        </p>
+        <p class="about-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde commodi exercitationem
+            dolor esse illum aut odit, nam facere deserunt quo? Quam sed asperiores doloremque nam tempore totam
+            excepturi placeat minus.
 
-            </p>
+        </p>
 
     </div>
+
+    <div class="hobby-section spaced-container top-divider">
+        <h3>Hobby</h3>
+
+        <ul>
+            <li>music</li>
+            <li>cooking</li>
+            <li>reading</li>
+            <li>yoga</li>
+        </ul>
+    </div>
+
+    <div class="favourite-movies spaced-container top-divider">
+        <h3>Favourite Movies</h3>
+
+        <ul class="movie-list">
+            <li class="movie-list-items">
+                <img class="photo" src="lord_of_the_rings.jpg">
+                <p><strong>Lord of the Rings</strong></p>
+            </li>
+            <li class="movie-list-items">
+                <img class="photo" src="shashwank_redemption.jpeg">
+                <p><strong>Sashwank Redemption</strong></p>
+
+            </li>
+            <li class="movie-list-items">
+                <img class="photo" src="batman_begins.jpeg">
+                <p><strong>Batman Begins</strong></p>
+            </li>
+            <li class="movie-list-items">
+                <img class="photo" src="inception.jpg">
+                <p><strong>Inception</strong></p>
+
+            </li>
+        </ul>
+    </div>
+
 
 
 </body>
